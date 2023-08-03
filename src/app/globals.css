@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    :root{
+        --header-bg: #FFF9EA;
+        --head-text: #1D1D1D;
+        --sub-text:  hsl(0, 0%, 59%);
+        --orange-color: #FFCB45;
+    }
+}
