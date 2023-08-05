@@ -8,7 +8,7 @@ import { navElts } from '@/lib/data';
 
 const Header = () => {
     return (
-        <header className="w-full h-[11.44vh] bg-header-bg py-4">
+        <header className="w-full lg:h-[11.44vh] h-[9vh] bg-header-bg py-4">
             <div className='max-w-7xl px-4 lg:px-0 mx-auto flex gap-8 items-center justify-between'>
                 <Link className='col-span-1' href={'/'}>
                     <Image src={'/assets/logo.png'} className='lg:w-[168px] lg:h-[47px] w-[136px] h-[37px]' width={168} height={47} alt='logo' />
@@ -24,7 +24,7 @@ const Header = () => {
                             <img className='h-4 lg:h-6' src='/assets/search.svg' alt='icon' />
                         </button>
                         <ShopCartIcon count={0} />
-                        <Button isIconed={true} text='Sign in' />
+                        <Button className='hidden lg:flex' isIconed={true} text='Sign in' />
                     </div>
                 </div>
             </div>
