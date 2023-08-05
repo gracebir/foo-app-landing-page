@@ -1,8 +1,9 @@
+import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Readex_Pro } from 'next/font/google'
 
-const inter = Readex_Pro({ subsets: ['latin'], weight: ['400','500','600','700'] })
+const reader_pro = Readex_Pro({ subsets: ['arabic'], weight: ['400','500','600','700'] })
 
 export const metadata: Metadata = {
   title: 'food app',
@@ -16,7 +17,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={reader_pro.className} suppressHydrationWarning={true}>
+        <Header/>
+        {children}
+      </body>
     </html>
   )
 }
